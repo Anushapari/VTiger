@@ -4,17 +4,14 @@ import org.testng.annotations.Test;
 
 public class CreateTest 
 {
-@Test
+	@Test(groups = "smoke")
 	public void create()
 	{
-		System.out.println("test created");
+		System.out.println("test created-Smoke");
 	}
-@Test
+	@Test(groups = "regression")
 	public void update()
 	{
-		System.out.print("test updated");
+		System.out.println("test updated-Regression");
 	}
-
-	
-
 }
